@@ -28,5 +28,6 @@ jobs:
         pytest
 
     - name: Running code quality by flake8
+      run: |
         flake8 .
   
