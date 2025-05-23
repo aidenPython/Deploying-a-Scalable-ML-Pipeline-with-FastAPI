@@ -147,8 +147,7 @@ def performance_on_categorical_slice(
         label=label,
         training=False, # use training = False
         encoder=encoder,
-        lb=lb,
-        model=model
+        lb=lb
     )
     preds = model.predict(X_slice) # get prediction on X_slice using the inference function
     precision, recall, fbeta = compute_model_metrics(y_slice, preds)
