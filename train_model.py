@@ -25,7 +25,8 @@ train, test = train_test_split(
     random_state=42,
     stratify=data["salary"]
 )
-
+print(f"Train shape: {train.shape[0]}")
+print(f"Test shape: {test.shape[0]}")
 # Define the categorical features
 cat_features = [
     "workclass",
